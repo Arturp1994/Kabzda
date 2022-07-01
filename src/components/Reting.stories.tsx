@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Rating} from "./Reting";
+import {action} from "@storybook/addon-actions";
 
 
 export default {
@@ -7,4 +8,13 @@ export default {
   component: Rating,
 }
 
-export const Rating1 = ()=> <Rating value={1} onClick={x=>x}/>
+
+export const Rating4 = ()=> <Rating value={1} onClick={x=>x}/>
+export const ControlledInput = ()=> {
+
+  const[parentValue, setParentValue] = useState("")
+
+  return <input value={parentValue} onChange={e => {setParentValue(e.currentTarget.value)}}/>
+
+}
+
