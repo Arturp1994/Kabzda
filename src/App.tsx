@@ -23,7 +23,7 @@ function App() {
         {/*<PageTitle title={'Заголовок2'}/>*/}
 
         <Accordion onClick={()=>{}} titleValue = {'Меню1'} collapsed={accordionCollapsed} items={[]} onChange={()=> {setAccordionCollapsed(!accordionCollapsed)}}/>
-        {/*<UncontrolledAccordion titleValue = {'Меню2'} />*/}
+        <UncontrolledAccordion titleValue = {'Меню2'} />
         <UncontrolOnOff onChange={setSwitchOn}/>
         <UncontrolledRating/>
         <Rating value = {ratingValue} onClick={setRatingValue}/>
