@@ -14,7 +14,7 @@
     border: solid 1px #000;
     border-radius: 50%;
     position: relative;
-    background: #fff;
+    background: #e1dcbc;
 }
 .clock .analog-clock .dial {
     position: absolute;
